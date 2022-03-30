@@ -1,0 +1,18 @@
+{
+  "name": "mern-template",
+  "version": "1.0.0",
+  "description": "This repo will provide a template for spinning up MERN Stack apps.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd client && npm run build && cd ../api && npm run start",
+    "startApi": "cd api && npm start",
+    "startClient": "cd client && npm start",
+    "dev": "concurrently \"npm:startApi\" \"npm:startClient\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
